@@ -2,7 +2,7 @@ import '../resources/css/tailwind.css'
 import React from 'react';
 
 const Home = () => {
-	fetch('https://meet.shardings.com/session', {
+	fetch('https://dev-workstation-1.shardings.com:3008/session', {
 		method: 'GET'
 	}).then(res => res.json())
 	.then(session => {
@@ -169,7 +169,7 @@ const Home = () => {
 									</p>
 								</button>
 							</a>
-							<a target="_blank" href="https://workspace.google.com/marketplace/app/shardings/518906264834">
+							<a target="_blank" rel="noreferrer" href="https://workspace.google.com/marketplace/app/shardings/518906264834">
 								<button id="google-workspace-btn"
 									className="flex items-center w-full rounded-[8px] p-[4px] mb-[8px]  border-[1px]  border-transparent relative hover:bg-[#e5e5da]  hover:shadow-[#ccca4f1f_1px_1px_3px] ">
 									<div id="google-workspace-btn-logo" className="mr-[8px] flex m-0 p-0 align-baseline box-border">
@@ -186,7 +186,7 @@ const Home = () => {
 									</p>
 								</button>
 							</a>
-							<a target="_blank" href="/handbook/handbook.html">
+							<a target="_blank" rel="noreferrer" href="/handbook/handbook.html">
 								<button id="handbook-btn"
 									className="flex items-center w-full rounded-[8px] p-[4px] mb-[8px]  border-[1px]  border-transparent relative hover:bg-[#e5e5da]  hover:shadow-[#ccca4f1f_1px_1px_3px] ">
 									<div className="mr-[8px] flex m-0 p-0 align-baseline box-border">
@@ -501,7 +501,7 @@ const Home = () => {
 														</path>
 													</svg>
 													<img id="profile-photo" src="/resources/img/default-profile.png"
-														className="rounded-md w-full h-full opacity-100" alt="profile-photo" />
+														className="rounded-md w-full h-full opacity-100" alt="profile" />
 												</div>
 												<div className="flex flex-col sm:flex-row">
 													<div className="ml-[8px] flex flex-col items-start justify-end">
